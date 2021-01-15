@@ -1,0 +1,49 @@
+.Rproj.user
+data_private/**
+joinpoint_analyses/**
+!joinpoint_analyses/age_std_rates_long.jps
+**.DS_Store
+manuscript/**
+grobs/**
+temp_files/**
+data/icen_2000_09_y0004.zip
+data/icen_2000_09_y0509.zip
+data/icen1999.txt.zip
+data/pcen_v2019_y1019_txt.zip
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
