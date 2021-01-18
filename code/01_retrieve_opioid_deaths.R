@@ -13,9 +13,6 @@ library(doParallel)
 library(config)
 source(here::here("code", "utils.R"))
 
-## DELETE!
-Sys.setenv(R_CONFIG_ACTIVE = "dev")
-
 ## Constants ----
 multi_proc <- config::get("proc_in_parallel")
 n_cores <- ifelse(multi_proc, config::get("num_cores"), 1)
