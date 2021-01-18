@@ -1,0 +1,24 @@
+# Config file for disproportionate_opioid_deaths project ---- 
+# Use this file to specify different constants for this project. Specifically,
+# location of plots or data, number of cores to use, years to analyze, etc.
+
+# You can make your own config (everything inherits from `default` so just
+# change what you want), and then set it as a global in your own computer:
+# `Sys.setenv(R_CONFIG_ACTIVE = "dev")`
+
+default:
+  year_0: 1999                    # Year to start private data
+  year_n: 2018                    # Year to end private data
+  working_data: './data'          # Where to save working data (not restricted)
+  private_data: './data_private'  # Data that should not be shared (NCHS rules)
+  plot_dir: './plots'             # Where to save plots
+  temp_files: './temp_files'      # Where to keep temporary working files
+  keep_working_data: false        # Keep intermediate files
+  proc_in_parallel: false         # When true, perform calculations in parallel
+  num_cores: null                 # Number of cores to use (null = 1/2 cores)
+
+# This is our internal configuration -- it is CPU- and memory-intensive.
+dev:
+  proc_in_parallel: true
+  keep_working_data: true
+  num_cores: 14 
