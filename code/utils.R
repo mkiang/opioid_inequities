@@ -26,12 +26,27 @@ categorize_opioids <- function(df) {
     df %>%
         dplyr::mutate(opioid_cat = factor(
             opioid_type,
-            levels = c("opioid", "natural", "heroin", "synth"),
+            levels = c(
+                "opioid",
+                "natural",
+                "heroin",
+                "synth",
+                "single_opioid",
+                "poly_opioid",
+                "single_heroin",
+                "single_natural",
+                "single_synth"
+            ), 
             labels = c(
                 "All opioids",
                 "Natural and semi-synthetic opioids",
                 "Heroin",
-                "Synthetic opioids"
+                "Synthetic opioids",
+                "One opioid alone",
+                "Multiple opioids",
+                "Heroin alone",
+                "Natural opioid alone",
+                "Synthetic opioid alone"
             ),
             ordered = TRUE
         ))
@@ -43,21 +58,20 @@ categorize_race <- function(df) {
     df %>%
         dplyr::mutate(race_cat = factor(
             race_eth,
-            levels = c("nhw", "nhb", "other"),
+            levels = c("nhw", "nhb", "other", "total"),
             labels = c("Non-Hispanic White",
                        "Non-Hispanic Black",
-                       "Other"),
+                       "Other", 
+                       "Total"),
             ordered = TRUE
         ))
 }
-
-
 
 spread_col_by_race <- function(results_df, target_col, year_x) {
     target_col <- dplyr::enquo(target_col)
     results_df %>%
         dplyr::filter(year == year_x) %>%
-        dplyr::select(race_eth, abbrev, opioid_type, !!target_col) %>%
+        dplyr::select(race_eth, st_fips, opioid_type, !!target_col) %>%
         tidyr::spread(race_eth, !!target_col) %>%
         dplyr::rename(
             !!paste0("nhb_", dplyr::quo_name(target_col)) := nhb,
@@ -76,33 +90,33 @@ reshape_to_yearly_wide <- function(results_df, year_x) {
             dplyr::left_join(
                 results_df %>%
                     spread_col_by_race(obs_se, year_x = year_x[i]),
-                by = c("abbrev", "opioid_type")
+                by = c("st_fips", "opioid_type")
             ) %>%
             dplyr::left_join(
                 results_df %>%
                     spread_col_by_race(model_rate, year_x = year_x[i]),
-                by = c("abbrev", "opioid_type")
+                by = c("st_fips", "opioid_type")
             ) %>%
             dplyr::left_join(
                 results_df %>%
                     spread_col_by_race(apc, year_x = year_x[i]),
-                by = c("abbrev", "opioid_type")
+                by = c("st_fips", "opioid_type")
             ) %>%
             dplyr::left_join(
                 results_df %>%
                     spread_col_by_race(slope_beta, year_x = year_x[i]),
-                by = c("abbrev", "opioid_type")
+                by = c("st_fips", "opioid_type")
             ) %>%
             dplyr::left_join(
                 results_df %>%
                     spread_col_by_race(slope_se, year_x = year_x[i]),
-                by = c("abbrev", "opioid_type")
+                by = c("st_fips", "opioid_type")
             ) %>%
             dplyr::mutate(year = year_x[i])
     }
     dplyr::bind_rows(holder) %>%
         categorize_opioids() %>%
-        dplyr::arrange(opioid_cat, abbrev, year) %>%
+        dplyr::arrange(opioid_cat, st_fips, year) %>%
         dplyr::ungroup()
 }
 
@@ -119,7 +133,7 @@ reshape_wide_to_long <- function(sub_wide_ranked, target_col) {
     sub_wide_ranked %>%
         dplyr::transmute(
             year = year,
-            abbrev = abbrev,
+            st_fips = st_fips,
             opioid_cat = opioid_cat,
             opioid_type = opioid_type,
             x_pos = !!target_x,
@@ -171,7 +185,7 @@ calculate_ratios <- function(wide_results) {
             obs_rr_sig = (!dplyr::between(1, obs_rr_lower, obs_rr_upper)) + 0,
             apc_ratio_sig = (!dplyr::between(1, apc_ratio_lower, apc_ratio_upper)) + 0
         ) %>%
-        dplyr::arrange(abbrev, opioid_type) %>%
+        dplyr::arrange(st_fips, opioid_type) %>%
         dplyr::ungroup()
 }
 
@@ -206,7 +220,7 @@ calculate_diffs <- function(wide_results) {
             obs_rd_sig = (obs_rd_lower * obs_rd_upper > 0) + 0,
             apc_diff_sig = (apc_diff_lower * apc_diff_upper > 0) + 0
         ) %>%
-        dplyr::arrange(abbrev, opioid_type) %>%
+        dplyr::arrange(st_fips, opioid_type) %>%
         dplyr::ungroup()
 }
 
@@ -235,17 +249,25 @@ return_two_colors <- function() {
 ## Takes the modeled rate and converts it to wide format.
 convert_modeled_rate_to_wide <- function(results_df) {
     results_df %>%
-        dplyr::select(year, race_eth, abbrev, opioid_cat, model_rate) %>%
-        dplyr::arrange(opioid_cat, race_eth, year) %>% 
-        tidyr::spread(race_eth, model_rate) %>% 
+        dplyr::select(year, race_eth, abbrev, st_fips, opioid_cat, model_rate) %>%
+        dplyr::arrange(opioid_cat, st_fips, race_eth, year) %>%
+        tidyr::pivot_wider(
+            id_cols = c("year", "st_fips", "opioid_cat", "abbrev"),
+            names_from = race_eth,
+            values_from = model_rate
+        ) %>%
         dplyr::rename(nhb_modeled = nhb, nhw_modeled = nhw)
 }
 
 convert_observed_rate_to_wide <- function(results_df) {
     results_df %>%
-        dplyr::select(year, race_eth, abbrev, opioid_cat, obs_rate) %>%
-        dplyr::arrange(opioid_cat, race_eth, year) %>% 
-        tidyr::spread(race_eth, obs_rate) %>% 
+        dplyr::select(year, race_eth, abbrev, st_fips, opioid_cat, obs_rate) %>%
+        dplyr::arrange(opioid_cat, st_fips, race_eth, year) %>%
+        tidyr::pivot_wider(
+            id_cols = c("year", "st_fips", "opioid_cat", "abbrev"),
+            names_from = race_eth,
+            values_from = obs_rate
+        ) %>%
         dplyr::rename(nhb_observed = nhb, nhw_observed = nhw)
 }
 
@@ -256,6 +278,839 @@ convert_rates_to_wide <- function(results_df) {
     )
 }
 
+return_county_abbrev <- function() {
+    structure(
+        list(
+            st_fips = c(
+                "01",
+                "02",
+                "60",
+                "04",
+                "05",
+                "06",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "64",
+                "13",
+                "66",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "68",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "69",
+                "39",
+                "40",
+                "41",
+                "70",
+                "42",
+                "72",
+                "44",
+                "45",
+                "46",
+                "47",
+                "48",
+                "74",
+                "49",
+                "50",
+                "51",
+                "78",
+                "53",
+                "54",
+                "55",
+                "56",
+                "01073",
+                "01097",
+                "01101",
+                "04013",
+                "05119",
+                "06001",
+                "06013",
+                "06037",
+                "06065",
+                "06067",
+                "06071",
+                "06073",
+                "08001",
+                "09001",
+                "09003",
+                "09009",
+                "10003",
+                "11001",
+                "12011",
+                "12031",
+                "12057",
+                "12086",
+                "12095",
+                "12099",
+                "12103",
+                "12105",
+                "13051",
+                "13063",
+                "13067",
+                "13089",
+                "13121",
+                "13135",
+                "13151",
+                "13245",
+                "17031",
+                "18089",
+                "18097",
+                "21111",
+                "22017",
+                "22033",
+                "22051",
+                "22071",
+                "24003",
+                "24005",
+                "24031",
+                "24510",
+                "25025",
+                "26099",
+                "26125",
+                "26163",
+                "27053",
+                "28049",
+                "29095",
+                "29189",
+                "29510",
+                "32003",
+                "34013",
+                "34039",
+                "36005",
+                "36029",
+                "36047",
+                "36055",
+                "36059",
+                "36061",
+                "36081",
+                "36103",
+                "36119",
+                "37051",
+                "37063",
+                "37067",
+                "37081",
+                "37119",
+                "37183",
+                "39035",
+                "39049",
+                "39061",
+                "39113",
+                "40109",
+                "42003",
+                "42045",
+                "42101",
+                "45019",
+                "45079",
+                "47037",
+                "47157",
+                "48029",
+                "48085",
+                "48113",
+                "48157",
+                "48201",
+                "48439",
+                "48453",
+                "51059",
+                "51087",
+                "51153",
+                "51710",
+                "51760",
+                "53033",
+                "55079"
+            ),
+            name = c(
+                "Alabama",
+                "Alaska",
+                "American Samoa",
+                "Arizona",
+                "Arkansas",
+                "California",
+                "Colorado",
+                "Connecticut",
+                "Delaware",
+                "District of Columbia",
+                "Florida",
+                "Federated States of Micronesia",
+                "Georgia",
+                "Guam",
+                "Hawaii",
+                "Idaho",
+                "Illinois",
+                "Indiana",
+                "Iowa",
+                "Kansas",
+                "Kentucky",
+                "Louisiana",
+                "Maine",
+                "Marshall Islands",
+                "Maryland",
+                "Massachusetts",
+                "Michigan",
+                "Minnesota",
+                "Mississippi",
+                "Missouri",
+                "Montana",
+                "Nebraska",
+                "Nevada",
+                "New Hampshire",
+                "New Jersey",
+                "New Mexico",
+                "New York",
+                "North Carolina",
+                "North Dakota",
+                "Northern Mariana Islands",
+                "Ohio",
+                "Oklahoma",
+                "Oregon",
+                "Palau",
+                "Pennsylvania",
+                "Puerto Rico",
+                "Rhode Island",
+                "South Carolina",
+                "South Dakota",
+                "Tennessee",
+                "Texas",
+                "U.S. Minor Outlying Islands",
+                "Utah",
+                "Vermont",
+                "Virginia",
+                "Virgin Islands of the U.S.",
+                "Washington",
+                "West Virginia",
+                "Wisconsin",
+                "Wyoming",
+                "Jefferson County",
+                "Mobile County",
+                "Montgomery County",
+                "Maricopa County",
+                "Pulaski County",
+                "Alameda County",
+                "Contra Costa County",
+                "Los Angeles County",
+                "Riverside County",
+                "Sacramento County",
+                "San Bernardino County",
+                "San Diego County",
+                "Adams County",
+                "Fairfield County",
+                "Hartford County",
+                "New Haven County",
+                "New Castle County",
+                "District of Columbia",
+                "Broward County",
+                "Duval County",
+                "Hillsborough County",
+                "Miami-Dade County",
+                "Orange County",
+                "Palm Beach County",
+                "Pinellas County",
+                "Polk County",
+                "Chatham County",
+                "Clayton County",
+                "Cobb County",
+                "DeKalb County",
+                "Fulton County",
+                "Gwinnett County",
+                "Henry County",
+                "Richmond County",
+                "Cook County",
+                "Lake County",
+                "Marion County",
+                "Jefferson County",
+                "Caddo Parish",
+                "East Baton Rouge Parish",
+                "Jefferson Parish",
+                "Orleans Parish",
+                "Anne Arundel County",
+                "Baltimore County",
+                "Montgomery County",
+                "Baltimore city",
+                "Suffolk County",
+                "Macomb County",
+                "Oakland County",
+                "Wayne County",
+                "Hennepin County",
+                "Hinds County",
+                "Jackson County",
+                "St. Louis County",
+                "St. Louis city",
+                "Clark County",
+                "Essex County",
+                "Union County",
+                "Bronx County",
+                "Erie County",
+                "Kings County",
+                "Monroe County",
+                "Nassau County",
+                "New York County",
+                "Queens County",
+                "Suffolk County",
+                "Westchester County",
+                "Cumberland County",
+                "Durham County",
+                "Forsyth County",
+                "Guilford County",
+                "Mecklenburg County",
+                "Wake County",
+                "Cuyahoga County",
+                "Franklin County",
+                "Hamilton County",
+                "Montgomery County",
+                "Oklahoma County",
+                "Allegheny County",
+                "Delaware County",
+                "Philadelphia County",
+                "Charleston County",
+                "Richland County",
+                "Davidson County",
+                "Shelby County",
+                "Bexar County",
+                "Collin County",
+                "Dallas County",
+                "Fort Bend County",
+                "Harris County",
+                "Tarrant County",
+                "Travis County",
+                "Fairfax County",
+                "Henrico County",
+                "Prince William County",
+                "Norfolk city",
+                "Richmond city",
+                "King County",
+                "Milwaukee County"
+            ),
+            abbrev = c(
+                "AL",
+                "AK",
+                "AS",
+                "AZ",
+                "AR",
+                "CA",
+                "CO",
+                "CT",
+                "DE",
+                "DC",
+                "FL",
+                "FM",
+                "GA",
+                "GU",
+                "HI",
+                "ID",
+                "IL",
+                "IN",
+                "IA",
+                "KS",
+                "KY",
+                "LA",
+                "ME",
+                "MH",
+                "MD",
+                "MA",
+                "MI",
+                "MN",
+                "MS",
+                "MO",
+                "MT",
+                "NE",
+                "NV",
+                "NH",
+                "NJ",
+                "NM",
+                "NY",
+                "NC",
+                "ND",
+                "MP",
+                "OH",
+                "OK",
+                "OR",
+                "PW",
+                "PA",
+                "PR",
+                "RI",
+                "SC",
+                "SD",
+                "TN",
+                "TX",
+                "UM",
+                "UT",
+                "VT",
+                "VA",
+                "VI",
+                "WA",
+                "WV",
+                "WI",
+                "WY",
+                "Jefferson County (AL)",
+                "Mobile County (AL)",
+                "Montgomery County (AL)",
+                "Maricopa County (AZ)",
+                "Pulaski County (AR)",
+                "Alameda County (CA)",
+                "Contra Costa County (CA)",
+                "Los Angeles County (CA)",
+                "Riverside County (CA)",
+                "Sacramento County (CA)",
+                "San Bernardino County (CA)",
+                "San Diego County (CA)",
+                "Adams County (CO)",
+                "Fairfield County (CT)",
+                "Hartford County (CT)",
+                "New Haven County (CT)",
+                "New Castle County (DE)",
+                "District of Columbia (DC)",
+                "Broward County (FL)",
+                "Duval County (FL)",
+                "Hillsborough County (FL)",
+                "Miami-Dade County (FL)",
+                "Orange County (FL)",
+                "Palm Beach County (FL)",
+                "Pinellas County (FL)",
+                "Polk County (FL)",
+                "Chatham County (GA)",
+                "Clayton County (GA)",
+                "Cobb County (GA)",
+                "DeKalb County (GA)",
+                "Fulton County (GA)",
+                "Gwinnett County (GA)",
+                "Henry County (GA)",
+                "Richmond County (GA)",
+                "Cook County (IL)",
+                "Lake County (IN)",
+                "Marion County (IN)",
+                "Jefferson County (KY)",
+                "Caddo Parish (LA)",
+                "East Baton Rouge Parish (LA)",
+                "Jefferson Parish (LA)",
+                "Orleans Parish (LA)",
+                "Anne Arundel County (MD)",
+                "Baltimore County (MD)",
+                "Montgomery County (MD)",
+                "Baltimore city (MD)",
+                "Suffolk County (MA)",
+                "Macomb County (MI)",
+                "Oakland County (MI)",
+                "Wayne County (MI)",
+                "Hennepin County (MN)",
+                "Hinds County (MS)",
+                "Jackson County (MO)",
+                "St. Louis County (MO)",
+                "St. Louis city (MO)",
+                "Clark County (NV)",
+                "Essex County (NJ)",
+                "Union County (NJ)",
+                "Bronx County (NY)",
+                "Erie County (NY)",
+                "Kings County (NY)",
+                "Monroe County (NY)",
+                "Nassau County (NY)",
+                "New York County (NY)",
+                "Queens County (NY)",
+                "Suffolk County (NY)",
+                "Westchester County (NY)",
+                "Cumberland County (NC)",
+                "Durham County (NC)",
+                "Forsyth County (NC)",
+                "Guilford County (NC)",
+                "Mecklenburg County (NC)",
+                "Wake County (NC)",
+                "Cuyahoga County (OH)",
+                "Franklin County (OH)",
+                "Hamilton County (OH)",
+                "Montgomery County (OH)",
+                "Oklahoma County (OK)",
+                "Allegheny County (PA)",
+                "Delaware County (PA)",
+                "Philadelphia County (PA)",
+                "Charleston County (SC)",
+                "Richland County (SC)",
+                "Davidson County (TN)",
+                "Shelby County (TN)",
+                "Bexar County (TX)",
+                "Collin County (TX)",
+                "Dallas County (TX)",
+                "Fort Bend County (TX)",
+                "Harris County (TX)",
+                "Tarrant County (TX)",
+                "Travis County (TX)",
+                "Fairfax County (VA)",
+                "Henrico County (VA)",
+                "Prince William County (VA)",
+                "Norfolk city (VA)",
+                "Richmond city (VA)",
+                "King County (WA)",
+                "Milwaukee County (WI)"
+            ),
+            state_fips = c(
+                "01",
+                "02",
+                "60",
+                "04",
+                "05",
+                "06",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "64",
+                "13",
+                "66",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "68",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31",
+                "32",
+                "33",
+                "34",
+                "35",
+                "36",
+                "37",
+                "38",
+                "69",
+                "39",
+                "40",
+                "41",
+                "70",
+                "42",
+                "72",
+                "44",
+                "45",
+                "46",
+                "47",
+                "48",
+                "74",
+                "49",
+                "50",
+                "51",
+                "78",
+                "53",
+                "54",
+                "55",
+                "56",
+                "01",
+                "01",
+                "01",
+                "04",
+                "05",
+                "06",
+                "06",
+                "06",
+                "06",
+                "06",
+                "06",
+                "06",
+                "08",
+                "09",
+                "09",
+                "09",
+                "10",
+                "11",
+                "12",
+                "12",
+                "12",
+                "12",
+                "12",
+                "12",
+                "12",
+                "12",
+                "13",
+                "13",
+                "13",
+                "13",
+                "13",
+                "13",
+                "13",
+                "13",
+                "17",
+                "18",
+                "18",
+                "21",
+                "22",
+                "22",
+                "22",
+                "22",
+                "24",
+                "24",
+                "24",
+                "24",
+                "25",
+                "26",
+                "26",
+                "26",
+                "27",
+                "28",
+                "29",
+                "29",
+                "29",
+                "32",
+                "34",
+                "34",
+                "36",
+                "36",
+                "36",
+                "36",
+                "36",
+                "36",
+                "36",
+                "36",
+                "36",
+                "37",
+                "37",
+                "37",
+                "37",
+                "37",
+                "37",
+                "39",
+                "39",
+                "39",
+                "39",
+                "40",
+                "42",
+                "42",
+                "42",
+                "45",
+                "45",
+                "47",
+                "47",
+                "48",
+                "48",
+                "48",
+                "48",
+                "48",
+                "48",
+                "48",
+                "51",
+                "51",
+                "51",
+                "51",
+                "51",
+                "53",
+                "55"
+            ),
+            state_abbrev = c(
+                "AL",
+                "AK",
+                "AS",
+                "AZ",
+                "AR",
+                "CA",
+                "CO",
+                "CT",
+                "DE",
+                "DC",
+                "FL",
+                "FM",
+                "GA",
+                "GU",
+                "HI",
+                "ID",
+                "IL",
+                "IN",
+                "IA",
+                "KS",
+                "KY",
+                "LA",
+                "ME",
+                "MH",
+                "MD",
+                "MA",
+                "MI",
+                "MN",
+                "MS",
+                "MO",
+                "MT",
+                "NE",
+                "NV",
+                "NH",
+                "NJ",
+                "NM",
+                "NY",
+                "NC",
+                "ND",
+                "MP",
+                "OH",
+                "OK",
+                "OR",
+                "PW",
+                "PA",
+                "PR",
+                "RI",
+                "SC",
+                "SD",
+                "TN",
+                "TX",
+                "UM",
+                "UT",
+                "VT",
+                "VA",
+                "VI",
+                "WA",
+                "WV",
+                "WI",
+                "WY",
+                "AL",
+                "AL",
+                "AL",
+                "AZ",
+                "AR",
+                "CA",
+                "CA",
+                "CA",
+                "CA",
+                "CA",
+                "CA",
+                "CA",
+                "CO",
+                "CT",
+                "CT",
+                "CT",
+                "DE",
+                "DC",
+                "FL",
+                "FL",
+                "FL",
+                "FL",
+                "FL",
+                "FL",
+                "FL",
+                "FL",
+                "GA",
+                "GA",
+                "GA",
+                "GA",
+                "GA",
+                "GA",
+                "GA",
+                "GA",
+                "IL",
+                "IN",
+                "IN",
+                "KY",
+                "LA",
+                "LA",
+                "LA",
+                "LA",
+                "MD",
+                "MD",
+                "MD",
+                "MD",
+                "MA",
+                "MI",
+                "MI",
+                "MI",
+                "MN",
+                "MS",
+                "MO",
+                "MO",
+                "MO",
+                "NV",
+                "NJ",
+                "NJ",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NY",
+                "NC",
+                "NC",
+                "NC",
+                "NC",
+                "NC",
+                "NC",
+                "OH",
+                "OH",
+                "OH",
+                "OH",
+                "OK",
+                "PA",
+                "PA",
+                "PA",
+                "SC",
+                "SC",
+                "TN",
+                "TN",
+                "TX",
+                "TX",
+                "TX",
+                "TX",
+                "TX",
+                "TX",
+                "TX",
+                "VA",
+                "VA",
+                "VA",
+                "VA",
+                "VA",
+                "WA",
+                "WI"
+            )
+        ),
+        row.names = c(NA, -159L),
+        class = c("tbl_df",
+                  "tbl", "data.frame"),
+        spec = structure(list(
+            cols = list(
+                name = structure(list(), class = c("collector_character",
+                                                   "collector")),
+                abbrev = structure(list(), class = c("collector_character",
+                                                     "collector")),
+                fips = structure(list(), class = c("collector_character",
+                                                   "collector"))
+            ),
+            default = structure(list(), class = c("collector_guess",
+                                                  "collector"))
+        ), class = "col_spec")
+    )
+}
+
+merge_new_abbrev <- function(df) {
+    df %>% 
+        select(-one_of("abbrev", "name")) %>% 
+        left_join(return_county_abbrev(),
+                  by = "st_fips")
+}
 
 ## Caterpillar plots ----
 ## Given wide results, subsets to specified year and state.
@@ -355,7 +1210,7 @@ flag_specific_state <-
     function(results_df,
              abbrev_x = "DC",
              alpha_interest = .9,
-             alpha_other = .7,
+             alpha_other = .5,
              size_interest = 3,
              size_other = 2) {
         st_name <- return_st_name(abbrev_x)
@@ -372,6 +1227,157 @@ flag_specific_state <-
                 ordered = TRUE
             ))
     }
+
+plot_geofacet <- function(results_df, 
+                          opioid_x = "opioid",
+                          include_total_pop = FALSE,
+                          return_data = FALSE) {
+    pS1_data <- results_df %>%
+        filter(nchar(abbrev) == 2) %>% 
+        select(
+            year,
+            st_fips,
+            abbrev,
+            name,
+            race_eth,
+            race_cat,
+            opioid_type,
+            opioid_cat,
+            obs_rate,
+            deaths,
+            pop,
+            model_rate
+        ) %>% 
+        filter(opioid_type == opioid_x)
+    
+    if (include_total_pop) {
+        c_vals <- c(rev(return_two_colors()), "darkgreen")
+    } else {
+        c_vals <- rev(return_two_colors())
+        pS1_data <- pS1_data %>% 
+            filter(race_eth != "total")
+    }
+    
+    p1 <- ggplot2::ggplot(pS1_data,
+                          ggplot2::aes(
+                              x = year,
+                              y = model_rate,
+                              color = race_cat,
+                              group = race_cat
+                          )) + 
+        ggplot2::geom_line(size = .8, alpha = .7) +
+        geofacet::facet_geo( ~ abbrev) +
+        ggplot2::scale_x_continuous(
+            NULL,
+            breaks = c(seq(1999, 2019, 5)),
+            labels = c("'99", "", "", "", "'19"),
+            expand = c(0, 0),
+            limits = c(1998.9, 2019.1)
+        ) +
+        # ggplot2::scale_y_continuous(
+        #     paste("Opioid-related mortality rate,",
+        #           "per 100,000"),
+        #     expand = c(0, 0),
+        #     # breaks = c(0, 30, 60)
+        # ) +
+        ggplot2::scale_color_manual(name = "Race/Ethnicity",
+                                    values = c_vals) +
+        mk_nytimes(
+            panel.border =
+                ggplot2::element_rect(
+                    linetype = "solid",
+                    fill = NA,
+                    color = "grey75"
+                ),
+            legend.position = c(1, 0),
+            legend.justification = c(1, 0),
+            axis.text.x = element_text(hjust = c(0, .5, .5, .5, 1))
+        )
+    
+    if (return_data) {
+        list(plot = p1,
+             data = pS1_data)
+    } else {
+        p1
+    }
+}
+
+plot_substate_facets <- function(results_df,
+                                 opioid_x = "opioid",
+                                 include_total_pop = FALSE,
+                                 return_data = FALSE) {
+    pS1_data <- results_df %>%
+        filter(nchar(abbrev) > 2) %>%
+        select(
+            year,
+            st_fips,
+            abbrev,
+            name,
+            race_eth,
+            race_cat,
+            opioid_type,
+            opioid_cat,
+            obs_rate,
+            deaths,
+            pop,
+            model_rate
+        ) %>%
+        filter(opioid_type == opioid_x)
+    
+    if (include_total_pop) {
+        c_vals <- c(rev(return_two_colors()), "darkgreen")
+    } else {
+        c_vals <- rev(return_two_colors())
+        pS1_data <- pS1_data %>%
+            filter(race_eth != "total")
+    }
+    
+    p1 <- ggplot2::ggplot(pS1_data,
+                          ggplot2::aes(
+                              x = year,
+                              y = model_rate,
+                              color = race_cat,
+                              group = race_cat
+                          )) + 
+        ggplot2::geom_line(size = .8, alpha = .7) +
+        facet_wrap(~ abbrev, 
+                   labeller = label_wrap_gen(width = 16)) +
+        ggplot2::scale_x_continuous(
+            NULL,
+            breaks = c(seq(1999, 2019, 5)),
+            labels = c("1999", "", "2009", "", "2019"),
+            expand = c(0, 0),
+            limits = c(1998.9, 2019.1)
+        ) +
+        # ggplot2::scale_y_continuous(
+        #     paste("Opioid-related mortality rate,",
+        #           "per 100,000 (truncated)"),
+        #     expand = c(0, 0),
+        #     breaks = c(0, 30, 60, 90)
+        # ) +
+        ggplot2::scale_color_manual(name = "Race/Ethnicity",
+                                    values = c_vals) +
+        ggplot2::coord_cartesian(ylim = c(0, 90)) +
+        mk_nytimes(
+            panel.border =
+                ggplot2::element_rect(
+                    linetype = "solid",
+                    fill = NA,
+                    color = "grey75"
+                ),
+            legend.position = "none",
+            axis.text.x = element_text(hjust = c(0, .5, .5, .5, 1))
+        )
+    
+    if (return_data) {
+        list(plot = p1,
+             data = pS1_data)
+    } else {
+        p1
+    }
+    
+    
+}
 
 ## Plot the mortality rate within a state from the joinpoint results tibble.
 plot_state_mortality <- function(results_df,
@@ -1003,7 +2009,7 @@ return_st_info <- function(subset_states = FALSE) {
             st_lat = 0,
             st_lon = 199
         ) %>%
-        dplyr::add_row(st_fips = fips) %>%
+        dplyr::rename(st_fips = fips) %>%
         dplyr::arrange(st_lon) %>%
         dplyr::mutate(
             lon_rank = dplyr::dense_rank(st_lon),

@@ -232,6 +232,22 @@ collapse_df <- function(df) {
     return(newdf)
 }
 
+collapse_df_fipschar <- function(df) {
+    newdf <- df %>%
+        dplyr::select(fipschar,
+                      age,
+                      race,
+                      hispanic,
+                      dplyr::starts_with("pop_est_")) %>%
+        dplyr::group_by(fipschar, age, race, hispanic) %>%
+        dplyr::summarize_all(sum)
+    return(newdf)
+}
+
+pop1999_fips  <- collapse_df_fipschar(pop1999)
+pop2000s_fips <- collapse_df_fipschar(pop2000s)
+pop2010s_fips <- collapse_df_fipschar(pop2010s)
+
 pop1999  <- collapse_df(pop1999)
 pop2000s <- collapse_df(pop2000s)
 pop2010s <- collapse_df(pop2010s)
@@ -241,19 +257,30 @@ all_pops_wide <- pop1999 %>%
     dplyr::left_join(pop2010s) %>%
     dplyr::ungroup()
 
+all_pops_wide_fips <- pop1999_fips %>%
+    dplyr::left_join(pop2000s_fips) %>%
+    dplyr::left_join(pop2010s_fips) %>%
+    dplyr::ungroup()
+
 ## Convert to long
 all_pops_long <- all_pops_wide %>%
     dplyr::ungroup() %>%
     dplyr::select(-dplyr::ends_with("april")) %>%
-    dplyr::select(fipst,
-                  fipsct,
+    dplyr::select(fipsihme, 
                   age,
-                  racesex,
                   hispanic,
                   race,
-                  female,
-                  fipschar,
-                  fipsihme,
+                  dplyr::everything()) %>%
+    tidyr::gather(year, pop_est, pop_est_1999:pop_est_2019) %>%
+    dplyr::mutate(year = as.integer(gsub("pop_est_", "", year)))
+
+all_pops_long_fips <- all_pops_wide_fips %>%
+    dplyr::ungroup() %>%
+    dplyr::select(-dplyr::ends_with("april")) %>%
+    dplyr::select(fipschar, 
+                  age,
+                  hispanic,
+                  race,
                   dplyr::everything()) %>%
     tidyr::gather(year, pop_est, pop_est_1999:pop_est_2019) %>%
     dplyr::mutate(year = as.integer(gsub("pop_est_", "", year)))
@@ -261,6 +288,13 @@ all_pops_long <- all_pops_wide %>%
 ## Save ----
 readr::write_csv(all_pops_long,
                  here::here(data_folder, "pop_est_collapsed_long.csv.xz"))
+readr::write_csv(all_pops_wide,
+                 here::here(data_folder, "pop_est_collapsed_wide.csv.xz"))
+
+readr::write_csv(all_pops_long_fips,
+                 here::here(data_folder, "pop_est_collapsed_long_fips.csv.xz"))
+readr::write_csv(all_pops_wide_fips,
+                 here::here(data_folder, "pop_est_collapsed_wide_fips.csv.xz"))
 
 ## Clean up ----
 if (!keep_temps) {

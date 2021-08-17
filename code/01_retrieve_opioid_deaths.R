@@ -1,6 +1,6 @@
 ## Retrieve all opioid-related deaths ----
 ## This script goes through all the private files (using the regex pattern
-## on line 33) and extracts all opioid-related deaths, saving just the
+## on line 32) and extracts all opioid-related deaths, saving just the
 ## subset of deaths we need for our analysis.
 
 ## Imports ----
@@ -47,7 +47,6 @@ foreach::foreach(year = year_0:year_n, .inorder = FALSE) %dopar% {
                     c(
                         "year",
                         "monthdth",
-                        "countyoc",
                         "countyrs",
                         "ager27",
                         "ucod",
@@ -71,7 +70,7 @@ foreach::foreach(year = year_0:year_n, .inorder = FALSE) %dopar% {
                 race_cat = narcan::categorize_race(race),
                 hispanic_cat = narcan::categorize_hspanicr(hspanicr),
                 age_cat  = narcan::categorize_age_5(age),
-                county_substr = substr(countyoc, 1, 2)
+                county_substr = substr(countyrs, 1, 2)
             )
         
         ## Figure out the correct state coding ----
@@ -90,13 +89,15 @@ foreach::foreach(year = year_0:year_n, .inorder = FALSE) %dopar% {
                 dplyr::mutate(st_fips = substr_codes)
         }
         temp_df <- temp_df %>%
-            dplyr::select(-county_substr)
+            dplyr::select(-county_substr) %>% 
+            dplyr::mutate(county_fips = paste0(st_fips, substr(countyrs, 3, 5)))
         
         ## Reorder columns
         temp_df <- temp_df %>%
             dplyr::select(
                 year,
                 st_fips,
+                county_fips, 
                 age,
                 age_cat,
                 race,
