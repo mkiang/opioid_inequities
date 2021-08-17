@@ -1,0 +1,83 @@
+---
+title: "Table S1 and S2. Summery of opioid mortality and population size by area"
+author: "Mathew Kiang"
+date: "5/16/2021"
+output: 
+  html_document: 
+    code_folding: 'hide'
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(error = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+```
+
+```{r, results='hide'}
+library(tidyverse)
+library(here)
+library(knitr)
+library(kableExtra)
+library(DT)
+source(here("code", "utils.R"))
+```
+
+```{r}
+age_std_rates_long <- readRDS(here::here("data_private", "age_std_rates_long.RDS")) %>% 
+    categorize_race() %>% 
+    categorize_opioids()
+```
+
+## Table S1. Total number of opioid deaths and average population by state
+
+```{r}
+age_std_rates_long %>%
+    group_by(name, abbrev, race_cat) %>%
+    filter(opioid_type == "opioid", nchar(abbrev) == 2) %>%
+    summarize(avg_pop = mean(pop), total_deaths = sum(deaths)) %>%
+    select(-abbrev) %>%
+    pivot_wider(
+        id_cols = name,
+        names_from = race_cat,
+        values_from = c(avg_pop, total_deaths)
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        name,
+        total_deaths_non_hispanic_black,
+        avg_pop_non_hispanic_black,
+        total_deaths_non_hispanic_white,
+        avg_pop_non_hispanic_white,
+        total_deaths_total,
+        avg_pop_total
+    ) %>% 
+    DT::datatable()
+```
+
+
+## Table S2. Total number of opioid deaths and average population by city/county
+
+```{r}
+age_std_rates_long %>%
+    group_by(abbrev, race_cat) %>%
+    filter(opioid_type == "opioid", nchar(abbrev) > 2) %>%
+    summarize(avg_pop = mean(pop), total_deaths = sum(deaths)) %>%
+    pivot_wider(
+        id_cols = abbrev,
+        names_from = race_cat,
+        values_from = c(avg_pop, total_deaths)
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        abbrev,
+        total_deaths_non_hispanic_black,
+        avg_pop_non_hispanic_black,
+        total_deaths_non_hispanic_white,
+        avg_pop_non_hispanic_white,
+        total_deaths_total,
+        avg_pop_total
+    ) %>% 
+    DT::datatable()
+```

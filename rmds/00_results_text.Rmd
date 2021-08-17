@@ -1,0 +1,118 @@
+---
+title: "Results Text"
+author: "Mathew Kiang"
+date: "1/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE, error=FALSE, warning=FALSE}
+library(DT)
+library(here)
+source(here("code", "utils.R"))
+```
+
+```{r message=FALSE}
+## Data ----
+results_df <-
+    readr::read_csv(here::here("data", "joinpoint_estimates_suppressed.csv"))
+
+results_df <- results_df %>%
+    categorize_opioids() %>%
+    categorize_race()
+```
+
+## Higher opioid-related mortality?
+```{r}
+results_df %>%
+    filter(race_eth != "total",
+           opioid_type == "opioid",
+           year == max(year)) %>%
+    mutate(area = ifelse(nchar(st_fips) == 2, "state", "substate")) %>%
+    select(st_fips, abbrev, area, race_eth, model_rate) %>%
+    pivot_wider(
+        id_cols = c(st_fips, abbrev, area),
+        names_from = race_eth,
+        values_from = model_rate
+    ) %>%
+    mutate(nhb_higher = (nhb > nhw) + 0) %>%
+    group_by(area) %>%
+    summarize(
+        n_nhb_higher = sum(nhb_higher, na.rm = TRUE),
+        prop_nhb_higher = mean(nhb_higher, na.rm = TRUE)
+    )
+```
+
+
+## Where is opioid-related mortality increasing?
+
+```{r}
+results_df %>%
+    filter(race_eth != "total",
+           opioid_type == "opioid",
+           year == max(year)) %>%
+    arrange(desc(apc)) %>%
+    mutate(area = ifelse(nchar(st_fips) == 2, "state", "substate")) %>% 
+    group_by(area, race_cat) %>%
+    summarize(n_areas = sum(apc_pval < .05 & apc > 0, na.rm = TRUE),
+              p_areas = mean(apc_pval < .05 & apc > 0, na.rm = TRUE))
+```
+
+```{r}
+results_df %>% 
+    filter(year == max(year),
+           opioid_type == "opioid", 
+           race_eth != "total", 
+           nchar(abbrev) == 2,
+               !(abbrev %in% c("ID", "MT", "WY", "SD", "ND", "ME"))) %>% 
+    group_by(race_cat) %>% 
+    summarize(n = n(), 
+              med_obs_rate = median(obs_rate, na.rm = TRUE),
+              p25 = quantile(obs_rate, .25, na.rm = TRUE),
+              p75 = quantile(obs_rate, .75, na.rm = TRUE), 
+              med_apc = median(apc, na.rm = TRUE), 
+              p25_apc = quantile(apc, .25, na.rm = TRUE), 
+              p75_apc = quantile(apc, .75, na.rm = TRUE))
+```
+
+```{r}
+results_df %>% 
+    filter(year == max(year),
+           opioid_type == "opioid", 
+           race_eth != "total", 
+           nchar(abbrev) > 2,
+               !(abbrev %in% c("ID", "MT", "WY", "SD", "ND", "ME"))) %>% 
+    group_by(race_cat) %>% 
+    summarize(n = n(), 
+              med_obs_rate = median(obs_rate, na.rm = TRUE),
+              p25 = quantile(obs_rate, .25, na.rm = TRUE),
+              p75 = quantile(obs_rate, .75, na.rm = TRUE), 
+              med_apc = median(apc, na.rm = TRUE), 
+              p25_apc = quantile(apc, .25, na.rm = TRUE), 
+              p75_apc = quantile(apc, .75, na.rm = TRUE))
+```
+
+```{r}
+results_df %>%
+    filter(st_fips %in% c("24510", "24005", "42101", "29510")) %>%
+    filter(year == max(year),
+           opioid_type == "opioid", 
+           race_eth != "total") %>%
+    select(
+        race_cat,
+        abbrev,
+        obs_rate,
+        deaths,
+        pop,
+        model_rate,
+        apc,
+        apc_lower,
+        apc_upper,
+        apc_pval
+    ) %>% 
+    arrange(abbrev, race_cat)
+```
+

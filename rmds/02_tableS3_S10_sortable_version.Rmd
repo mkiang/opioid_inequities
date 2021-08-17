@@ -1,0 +1,473 @@
+---
+title: "Table S3 to S10. 2019 opioid-related mortality by area"
+author: "Mathew Kiang"
+date: "5/19/2021"
+output: 
+  html_document: 
+    code_folding: 'hide'
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(error = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+```
+
+```{r, results='hide'}
+library(tidyverse)
+library(here)
+library(knitr)
+library(kableExtra)
+library(DT)
+source(here("code", "utils.R"))
+```
+
+```{r}
+results_df <-
+    readr::read_csv(here::here("data", "joinpoint_estimates_suppressed.csv"))
+
+results_df <- results_df %>%
+    categorize_opioids() %>%
+    categorize_race()
+
+wide_df <- readRDS(here("data", "ratios_and_diffs_suppressed.RDS")) %>%
+    filter(year == 2019) 
+```
+
+```{r}
+summarized_table <- results_df %>%
+    filter(year == 2019) %>%
+    transmute(
+        abbrev,
+        name,
+        opioid_cat,
+        opioid_type,
+        race_eth,
+        race_cat,
+        deaths,
+        obs_rate,
+        model_rate,
+        apc,
+        apc_lower,
+        apc_upper, 
+        apc_pval, 
+        doubling_time = sprintf("%0.1f (%0.1f, %0.1f)",
+                                round(1 / log2(1 + apc/100), 1),
+                                round(1 / log2(1 + apc_lower/100), 1),
+                                round(1 / log2(1 + apc_upper/100), 1)
+        )
+    ) 
+write_csv(summarized_table, here("output", "tables_S3_to_S10_data_sortable.csv"))
+```
+
+## Table S3. Opioid-related mortality in 2019 by state and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) == 2,
+           opioid_type == "opioid") %>%
+    arrange(name) %>%
+    select(-abbrev, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = name,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        name,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S4. Opioid-related mortality in 2019 by city/county and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) > 2,
+           opioid_type == "opioid") %>%
+    arrange(abbrev) %>% 
+    select(-name, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = abbrev,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        abbrev,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S5. Heroin-related mortality in 2019 by state and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) == 2,
+           opioid_type == "heroin") %>%
+    arrange(name) %>% 
+    select(-abbrev, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = name,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        name,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S6. Heroin-related mortality in 2019 by city/county and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) > 2,
+           opioid_type == "opioid") %>%
+    arrange(abbrev) %>% 
+    select(-name, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = abbrev,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        abbrev,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S7. Natural/semi-synthetic-related mortality in 2019 by state and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) == 2,
+           opioid_type == "natural") %>%
+    arrange(name) %>% 
+    select(-abbrev, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = name,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        name,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S8. Natural/semi-synthetic-related mortality in 2019 by city/county and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) > 2,
+           opioid_type == "opioid") %>%
+    arrange(abbrev) %>% 
+    select(-name, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = abbrev,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        abbrev,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S9. Synthetic opioid-related mortality in 2019 by state and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) == 2,
+           opioid_type == "synth") %>%
+    arrange(name) %>% 
+    select(-abbrev, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = name,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        name,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S10. Synthetic opioid-related mortality in 2019 by city/county and race/ethnicity
+```{r}
+summarized_table %>%
+    filter(nchar(abbrev) > 2,
+           opioid_type == "synth") %>%
+    arrange(abbrev) %>% 
+    select(-name, -opioid_cat, -opioid_type, -race_cat) %>%
+    pivot_wider(
+        id_cols = abbrev,
+        names_from = race_eth,
+        values_from = c(
+            deaths,
+            obs_rate,
+            model_rate,
+            apc,
+            apc_lower,
+            apc_upper,
+            apc_pval,
+            doubling_time
+        )
+    ) %>%
+    janitor::clean_names() %>%
+    select(
+        abbrev,
+        deaths_nhb,
+        obs_rate_nhb,
+        model_rate_nhb,
+        apc_nhb,
+        apc_lower_nhb,
+        apc_upper_nhb,
+        apc_pval_nhb,
+        doubling_time_nhb,
+        deaths_nhw,
+        obs_rate_nhw,
+        model_rate_nhw,
+        apc_nhw,
+        apc_lower_nhw,
+        apc_upper_nhw,
+        apc_pval_nhw,
+        doubling_time_nhw
+    ) %>%
+    DT::datatable()
+```
+
+## Table S11. 2019 rates, rate differences, and rate ratios by state
+```{r}
+wide_df %>%
+  filter(opioid_type == "opioid", nchar(abbrev) == 2) %>%
+  arrange(name) %>%
+  transmute(
+    name,
+    obs_rate_nhb = sprintf("%0.1f (%0.1f)",
+                           round(obs_rate_nhb, 1),
+                           round(obs_se_nhb, 1)),
+    obs_rate_nhw = sprintf("%0.1f (%0.1f)",
+                           round(obs_rate_nhw, 1),
+                           round(obs_se_nhw, 1)),
+    obs_rd = sprintf(
+      "%0.1f (%0.1f, %0.1f)",
+      round(obs_rd, 1),
+      round(obs_rd_lower, 1),
+      round(obs_rd_upper, 1)
+    ),
+    obs_rr = sprintf(
+      "%0.2f (%0.2f, %0.2f)",
+      round(obs_rr, 2),
+      round(obs_rr_lower, 2),
+      round(obs_rr_upper, 2)
+    )
+  ) %>%
+    DT::datatable()
+```
+
+## Table S12. 2019 rates, rate differences, and rate ratios by city/county
+```{r}
+wide_df %>%
+  filter(opioid_type == "opioid", nchar(abbrev) > 2) %>%
+  arrange(abbrev) %>%
+  transmute(
+    abbrev,
+    obs_rate_nhb = sprintf("%0.1f (%0.1f)",
+                           round(obs_rate_nhb, 1),
+                           round(obs_se_nhb, 1)),
+    obs_rate_nhw = sprintf("%0.1f (%0.1f)",
+                           round(obs_rate_nhw, 1),
+                           round(obs_se_nhw, 1)),
+    obs_rd = sprintf(
+      "%0.1f (%0.1f, %0.1f)",
+      round(obs_rd, 1),
+      round(obs_rd_lower, 1),
+      round(obs_rd_upper, 1)
+    ),
+    obs_rr = sprintf(
+      "%0.2f (%0.2f, %0.2f)",
+      round(obs_rr, 2),
+      round(obs_rr_lower, 2),
+      round(obs_rr_upper, 2)
+    )
+  ) %>%
+    DT::datatable()
+```
