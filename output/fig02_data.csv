@@ -1,0 +1,673 @@
+year,st_fips,abbrev,name,race_eth,race_cat,opioid_type,opioid_cat,obs_rate,deaths,pop,model_rate
+1999,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,162736,9.02
+2000,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,163421,9.239999999999998
+2001,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,163102,9.47
+2002,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,163525,9.7
+2003,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,14.134409794668201,22,163752,9.94
+2004,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,7.903100842748351,12,163759,10.18
+2005,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,11.692417786003693,18,163801,10.43
+2006,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,9.05002943988262,13,164197,10.68
+2007,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,8.801076104120964,14,164878,10.94
+2008,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,10.607768949798292,17,166254,11.209999999999999
+2009,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,9.908132016847247,17,167133,11.48
+2010,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,11.396500869962592,20,167837,11.76
+2011,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,14.611100089372265,23,168547,12.05
+2012,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,11.019926912256736,19,169297,12.350000000000001
+2013,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,12.395285589511335,21,170363,12.65
+2014,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,10.712658195405204,18,170435,12.96
+2015,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,21.420570772648727,36,170409,20.69
+2016,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,41.68417254373729,67,170838,33.06
+2017,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,51.19954688003089,78,169898,52.8
+2018,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,35.21943999845879,54,170024,48.13
+2019,42003,Allegheny County (PA),Allegheny County,nhb,Non-Hispanic Black,opioid,All opioids,48.876744991004294,78,169831,43.879999999999995
+1999,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,424484,57.54
+2000,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,421346,52.379999999999995
+2001,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,417059,47.68
+2002,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,414503,43.41
+2003,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,37.99020874005226,152,412158,39.52
+2004,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,31.204917964368224,122,409893,35.98
+2005,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,29.237855627916836,117,408735,32.75
+2006,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,35.96646837458731,142,407556,29.82
+2007,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,35.37160721849083,142,405286,27.14
+2008,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,21.054460508999334,82,403531,24.71
+2009,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,25.274196702952903,103,401094,22.5
+2010,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,16.983583692652466,70,399504,20.479999999999997
+2011,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,14.495409889020433,57,398643,18.64
+2012,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,23.485749663483315,94,399003,23.68
+2013,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,24.940508015532302,109,398563,30.07
+2014,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,39.20980868843263,163,398806,38.190000000000005
+2015,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,43.50260265245532,183,397000,48.5
+2016,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,75.25017538746219,311,391862,61.59
+2017,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,78.43149819654222,332,386773,78.22
+2018,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,101.42372429360834,431,380294,99.33
+2019,24510,Baltimore city (MD),Baltimore city,nhb,Non-Hispanic Black,opioid,All opioids,117.55764548243788,487,373409,126.14999999999999
+1999,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,147983,0.02
+2000,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,154600,0.1
+2001,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,162725,0.48000000000000004
+2002,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,169795,2.17
+2003,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,11.023193414372816,20,177094,9.9
+2004,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,184245,9.32
+2005,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,9.834505175079709,19,190157,8.77
+2006,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,10.479792053033572,21,195603,8.25
+2007,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,7.378763212941632,15,200494,7.76
+2008,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,6.818689530692948,14,204404,7.3
+2009,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,6.428767862159821,13,209439,6.87
+2010,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,214332,6.46
+2011,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,6.707466095913809,14,218539,6.08
+2012,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,6.714408836660319,15,221973,5.72
+2013,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,9.149601670368021,21,226221,8.639999999999999
+2014,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,14.245515699186532,32,229833,13.04
+2015,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,12.555021767084746,30,233857,19.69
+2016,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,33.339723241421176,81,238900,29.73
+2017,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,29.060193645139453,71,243095,32.17
+2018,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,39.207089281086866,101,247095,34.82
+2019,24005,Baltimore County (MD),Baltimore County,nhb,Non-Hispanic Black,opioid,All opioids,35.44716400543009,92,251350,37.68
+1999,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,385531,6.03
+2000,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,386826,5.67
+2001,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,387552,5.34
+2002,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,388295,5.02
+2003,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,3.804929912004689,14,388771,4.73
+2004,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,4.5808429636478625,17,388591,4.45
+2005,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,5.059529154493747,19,387825,4.1899999999999995
+2006,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,4.341481906715627,17,386014,3.94
+2007,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,4.113143419087851,17,384958,3.71
+2008,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,2.92457039563063,12,384395,3.4899999999999998
+2009,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,4.191239552133002,16,384129,4.23
+2010,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,5.681632961509863,23,384519,5.14
+2011,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,7.684908585615582,32,383571,6.23
+2012,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,6.307032187450535,27,382726,7.56
+2013,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,7.628283948494509,36,383372,9.17
+2014,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,9.362443714046421,35,383293,11.12
+2015,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,10.340114117290302,43,383194,13.48
+2016,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,18.200894256952104,76,382411,16.36
+2017,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,25.570912718565072,99,380468,19.84
+2018,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,18.442825063727703,74,378883,24.06
+2019,39035,Cuyahoga County (OH),Cuyahoga County,nhb,Non-Hispanic Black,opioid,All opioids,30.415588198168457,120,377559,29.19
+1999,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,7.120000370090642,24,346580,10.709999999999999
+2000,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,10.617284950705521,36,345917,10.66
+2001,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,10.644445391754692,36,341955,10.6
+2002,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,7.773985372109694,26,338411,10.55
+2003,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,13.125552982999242,44,332773,10.5
+2004,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,14.92036455479632,50,326663,10.450000000000001
+2005,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,11.445197593374209,39,320385,10.4
+2006,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,13.486950713864394,46,315872,10.350000000000001
+2007,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,8.35537627152464,28,312283,10.3
+2008,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,7.105408645268311,26,309063,10.25
+2009,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,3.0578852455295937,12,308452,10.2
+2010,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,7.729403217567712,25,308684,10.15
+2011,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,11.641455596242071,40,311264,10.1
+2012,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,10.635475570645914,34,314604,10.05
+2013,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,13.689872565408375,50,319303,10
+2014,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,13.765777064178405,48,321781,16.77
+2015,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,22.694311792049216,82,323815,28.12
+2016,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,47.902824145581484,177,324909,47.14
+2017,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,58.77878930929589,216,324981,51.01
+2018,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,47.61338123458144,170,324295,55.190000000000005
+2019,11001,District of Columbia (DC),District of Columbia,nhb,Non-Hispanic Black,opioid,All opioids,61.46999325361418,219,321775,59.720000000000006
+1999,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,214798,0.18
+2000,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,219057,0.22
+2001,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,223361,0.28
+2002,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,227827,0.35
+2003,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,232377,0.43000000000000005
+2004,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,237538,0.54
+2005,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,241843,0.6699999999999999
+2006,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,247152,0.8400000000000001
+2007,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,250838,1.05
+2008,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,253147,1.3
+2009,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,255465,1.62
+2010,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,257930,2.03
+2011,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,260756,2.52
+2012,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,263172,3.15
+2013,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,266364,3.92
+2014,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,270274,4.89
+2015,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,274941,6.1
+2016,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,12.556324152926335,33,280188,7.6
+2017,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,11.781482428232753,33,284721,9.48
+2018,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,8.403698515055185,23,289107,11.82
+2019,12031,Duval County (FL),Duval County,nhb,Non-Hispanic Black,opioid,All opioids,14.645358383116418,40,292826,14.739999999999998
+1999,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,102.59371690526642,113,123883,95.74000000000001
+2000,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,79.5885045755304,89,124887,88.19
+2001,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,76.56784286381337,86,124792,81.25
+2002,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,80.98735301290726,92,124725,74.85
+2003,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,125066,23.84
+2004,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,124822,7.6
+2005,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,124324,2.42
+2006,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,123785,2.8099999999999996
+2007,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,123542,3.27
+2008,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,123911,3.8099999999999996
+2009,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,123987,4.430000000000001
+2010,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,124325,5.1499999999999995
+2011,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,124639,5.99
+2012,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,124606,6.970000000000001
+2013,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,125174,8.11
+2014,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,125481,9.43
+2015,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,13.424690266203687,17,125543,10.97
+2016,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,19.03863304179269,24,125261,12.75
+2017,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,18.11154931077097,21,125586,14.83
+2018,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,16.307690280706932,21,125800,17.25
+2019,36029,Erie County (NY),Erie County,nhb,Non-Hispanic Black,opioid,All opioids,13.087979613954877,16,125806,20.07
+1999,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,328942,0.11
+2000,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,331133,0.38
+2001,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,330831,1.24
+2002,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,331325,4.13
+2003,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,12.00888147444542,39,330878,13.67
+2004,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,8.81627287486307,28,328462,12.11
+2005,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,16.80983728340728,53,324609,10.719999999999999
+2006,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,10.202050787601284,31,320468,9.49
+2007,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,7.689511347455904,24,317539,8.4
+2008,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,5.437945845673423,17,315820,7.44
+2009,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,316154,6.58
+2010,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,6.708472437013831,22,316385,5.83
+2011,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,4.180174336001994,14,316132,5.159999999999999
+2012,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,7.780216051756702,25,314811,6.95
+2013,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,10.362737661119361,35,314971,9.370000000000001
+2014,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,9.522908276199274,32,314932,12.62
+2015,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,13.169209784472452,45,314524,17.01
+2016,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,22.651491113225273,80,314438,22.919999999999998
+2017,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,39.24910497679768,140,315006,30.88
+2018,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,40.349416542509594,137,314566,41.61
+2019,34013,Essex County (NJ),Essex County,nhb,Non-Hispanic Black,opioid,All opioids,52.228375686235665,185,314342,56.06
+1999,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,201117,1.1700000000000002
+2000,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,201913,1.3900000000000001
+2001,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,203139,1.6400000000000001
+2002,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,204124,1.93
+2003,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,5.613191723530189,11,204713,2.29
+2004,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,205222,2.7
+2005,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,205866,3.19
+2006,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,207081,3.77
+2007,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,208109,4.46
+2008,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,6.359090697837658,13,209157,5.2700000000000005
+2009,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,210910,6.23
+2010,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,211989,7.359999999999999
+2011,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,212555,8.7
+2012,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,6.179022424283277,13,213672,10.28
+2013,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,14.53424844294474,32,215683,12.15
+2014,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,13.2967687215598,29,217059,14.360000000000001
+2015,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,22.637922104228714,47,218498,16.97
+2016,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,14.025445751147258,30,219594,20.05
+2017,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,27.952614143849896,60,220857,23.7
+2018,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,30.01526853821221,65,222036,28.01
+2019,39061,Hamilton County (OH),Hamilton County,nhb,Non-Hispanic Black,opioid,All opioids,30.390684739910913,66,222915,33.1
+1999,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,131995,0.29000000000000004
+2000,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,133537,0.36
+2001,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,135452,0.46
+2002,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,137739,0.58
+2003,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,139850,0.73
+2004,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,142868,0.91
+2005,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,145070,1.1500000000000001
+2006,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,147261,1.44
+2007,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,150503,1.82
+2008,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,153185,2.2800000000000002
+2009,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,156249,2.8699999999999997
+2010,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,158802,3.61
+2011,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,161042,4.55
+2012,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,162880,5.72
+2013,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,165854,7.1899999999999995
+2014,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,167741,9.05
+2015,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,6.102653121347998,11,169272,11.38
+2016,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,19.556100892005727,32,171376,14.32
+2017,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,14.322209529724537,22,173568,18.01
+2018,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,19.09153140806229,34,174327,22.650000000000002
+2019,21111,Jefferson County (KY),Jefferson County,nhb,Non-Hispanic Black,opioid,All opioids,33.38038173560012,56,175444,28.49
+1999,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,113200,0.07
+2000,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,113811,0.19
+2001,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,114254,0.47000000000000003
+2002,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,114774,1.1900000000000002
+2003,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,115347,3.03
+2004,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,115603,7.68
+2005,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116106,7.39
+2006,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,115991,7.109999999999999
+2007,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116313,6.84
+2008,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,9.591219190435247,11,116378,6.58
+2009,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116000,6.33
+2010,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116477,6.09
+2011,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116500,5.859999999999999
+2012,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,116612,5.64
+2013,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,10.253558140788627,11,116959,9.239999999999998
+2014,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,13.247474326348405,15,116946,15.139999999999999
+2015,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,19.894027263309685,24,117156,24.8
+2016,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,44.18461762728577,48,117479,40.63
+2017,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,71.00792093778698,75,117949,66.56
+2018,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,47.21609982370275,49,118475,56.449999999999996
+2019,39113,Montgomery County (OH),Montgomery County,nhb,Non-Hispanic Black,opioid,All opioids,51.91417758095815,54,118997,47.87
+1999,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,99716,0.5
+2000,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,102614,0.62
+2001,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,105380,0.75
+2002,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,108379,0.92
+2003,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,111324,1.12
+2004,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,114117,1.37
+2005,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,117385,1.6700000000000002
+2006,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,120536,2.04
+2007,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,123474,2.4899999999999998
+2008,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,125947,3.03
+2009,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,127846,3.7
+2010,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,129327,4.52
+2011,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,131116,5.52
+2012,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,132705,6.74
+2013,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,8.647756815232686,11,134397,8.219999999999999
+2014,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,136277,10.04
+2015,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,138272,12.25
+2016,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,8.25646971628953,12,140261,14.96
+2017,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,23.308900313752428,34,142118,18.259999999999998
+2018,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,25.956536509305067,37,143965,22.29
+2019,10003,New Castle County (DE),New Castle County,nhb,Non-Hispanic Black,opioid,All opioids,30.042424253204583,43,145718,27.21
+1999,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,159089,0.58
+2000,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,163972,0.65
+2001,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,170890,0.73
+2002,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,178327,0.81
+2003,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,186059,0.92
+2004,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,195292,1.03
+2005,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,203243,1.1500000000000001
+2006,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,209057,1.3
+2007,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,212864,1.46
+2008,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,218062,1.6400000000000001
+2009,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,223990,1.84
+2010,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,229802,2.06
+2011,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,235891,2.32
+2012,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,243322,2.6
+2013,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,251426,2.92
+2014,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,257852,3.2800000000000002
+2015,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,264647,3.69
+2016,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,271606,4.14
+2017,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,7.477500468322637,21,278075,4.6499999999999995
+2018,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,5.540323395842534,16,282455,5.22
+2019,12099,Palm Beach County (FL),Palm Beach County,nhb,Non-Hispanic Black,opioid,All opioids,5.848569582814502,16,286846,5.859999999999999
+1999,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,657634,0.56
+2000,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,658113,0.6
+2001,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,657781,0.64
+2002,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,659040,0.69
+2003,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,659859,0.73
+2004,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,661148,0.7899999999999999
+2005,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,660906,0.8400000000000001
+2006,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,659754,0.91
+2007,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,658378,0.97
+2008,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,1.8319506131194048,12,658260,1.04
+2009,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,659611,1.12
+2010,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,660525,1.2
+2011,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,1.5562100952775122,11,664499,1.28
+2012,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,667281,1.37
+2013,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,668574,1.47
+2014,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,1.6519109646407544,13,669068,1.58
+2015,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,669625,1.6900000000000002
+2016,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,2.1219596261372238,12,668576,3.88
+2017,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,2.6802807297004096,17,666379,8.91
+2018,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,29.869415050959272,204,663319,20.45
+2019,42101,Philadelphia County (PA),Philadelphia County,nhb,Non-Hispanic Black,opioid,All opioids,39.39941100605856,262,659471,46.91
+1999,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,180845,8.49
+2000,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,180177,8.66
+2001,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,177791,8.84
+2002,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,175483,9.01
+2003,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,8.296618409937565,13,173789,9.19
+2004,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,10.040493916170924,16,171835,9.38
+2005,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,7.7746313027547576,12,168378,9.57
+2006,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,15.780234711011461,24,165390,9.76
+2007,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,162916,9.96
+2008,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,9.074505557155213,15,161671,10.16
+2009,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,10.01722390628703,15,160643,10.360000000000001
+2010,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,13.176374185573952,20,159464,13.129999999999999
+2011,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,22.10777103555368,35,158783,16.64
+2012,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,14.676119190165526,22,157833,21.1
+2013,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,23.256119623109097,35,156678,26.74
+2014,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,29.985032669658988,47,155474,33.89
+2015,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,28.821805147201882,42,152718,42.96
+2016,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,66.97345570429795,95,149810,54.449999999999996
+2017,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,75.61059049893521,104,145742,69.02
+2018,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,96.17731676875023,129,141962,87.48
+2019,29510,St. Louis city (MO),St. Louis city,nhb,Non-Hispanic Black,opioid,All opioids,97.49857794345884,130,138566,110.88
+1999,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,192690,1.2
+2000,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,197167,1.46
+2001,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,202181,1.77
+2002,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,207218,2.14
+2003,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,211472,2.59
+2004,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,5.968989086984475,13,215906,3.14
+2005,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,220576,3.8
+2006,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,7.485476660540413,16,225480,4.609999999999999
+2007,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,NA,NA,229294,5.58
+2008,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,4.592683694162572,11,232252,6.7700000000000005
+2009,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,4.988046785958892,11,235335,8.2
+2010,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,8.901195119609962,20,238229,9.93
+2011,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,11.365155681101136,27,239611,12.03
+2012,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,13.89963829114999,32,241303,14.58
+2013,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,16.364426541329877,36,242829,17.67
+2014,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,19.16478846189491,43,243932,21.41
+2015,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,18.27502899187216,42,246151,25.939999999999998
+2016,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,34.94987815001378,80,247860,31.419999999999998
+2017,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,39.888686176818005,92,249821,38.07
+2018,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,49.3752126654018,116,251845,46.13
+2019,29189,St. Louis County (MO),St. Louis County,nhb,Non-Hispanic Black,opioid,All opioids,57.37232418381609,134,253784,55.89
+1999,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,1089516,8.98
+2000,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,1079229,9.5
+2001,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,1070473,10.05
+2002,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,1061028,10.629999999999999
+2003,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,12.757466955473655,131,1051418,11.239999999999998
+2004,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,12.926112385221245,132,1038557,11.89
+2005,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,14.404013439103657,144,1024191,12.57
+2006,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,7.990850279039855,79,1013150,13.3
+2007,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,14.842057171529861,149,1006581,14.06
+2008,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,15.274567416573595,152,1001744,14.870000000000001
+2009,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,14.644989929688471,146,999582,15.729999999999999
+2010,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,14.592901062050789,140,998411,16.64
+2011,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,18.581985186980987,174,998757,17.59
+2012,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,20.440136325823666,202,997606,18.610000000000003
+2013,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,20.070634785832038,193,996072,19.68
+2014,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,23.357139825080548,220,992349,25.95
+2015,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,33.40259728763724,317,986113,34.220000000000006
+2016,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,49.46225304652987,480,980916,45.120000000000005
+2017,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,61.120939736555904,577,973187,59.49
+2018,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,36.10163237607881,329,967767,45.720000000000006
+2019,42003,Allegheny County (PA),Allegheny County,nhw,Non-Hispanic White,opioid,All opioids,39.1526425599607,359,963640,35.14
+1999,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,209329,36.28
+2000,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,203156,35.8
+2001,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,197586,35.33
+2002,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,191937,34.86
+2003,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,32.421098188815556,62,187461,34.4
+2004,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,33.11952872534808,61,182853,33.94
+2005,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,35.28907090653669,67,179374,33.49
+2006,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,30.977723298012776,58,177962,33.05
+2007,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,41.80338076796634,73,177304,32.61
+2008,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,26.387342980987093,46,176748,32.18
+2009,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,34.84197994016122,61,177052,31.759999999999998
+2010,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,25.935663147985416,47,177033,31.34
+2011,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,32.86451140154915,61,176389,30.919999999999998
+2012,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,30.58159335366177,57,177007,30.51
+2013,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,32.625941364529275,63,176275,30.110000000000003
+2014,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,35.26496243844144,65,175817,40.87
+2015,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,53.27626569965813,102,175161,55.47
+2016,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,76.97029458934033,142,173237,75.29
+2017,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,79.68390210229651,156,171697,81.51
+2018,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,96.81347245704373,170,169849,88.24000000000001
+2019,24510,Baltimore city (MD),Baltimore city,nhw,Non-Hispanic White,opioid,All opioids,90.16403020064035,163,167143,95.52
+1999,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,561613,0.09
+2000,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,558773,0.32
+2001,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,555501,1.1300000000000001
+2002,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,552381,4.05
+2003,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,17.33618962704975,90,548822,14.450000000000001
+2004,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,13.566719847878097,69,544313,15.07
+2005,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,13.942354793238787,71,538938,15.719999999999999
+2006,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,16.32832512788463,84,533575,16.4
+2007,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,17.644791820571104,87,526730,17.1
+2008,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,18.35280798457663,91,521369,17.84
+2009,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,18.39095577649965,89,515894,18.6
+2010,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,19.13391931575502,94,512141,19.4
+2011,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,17.419763435409614,84,510789,20.24
+2012,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,23.492316030042662,113,508967,21.110000000000003
+2013,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,23.207479777119854,111,505826,22.01
+2014,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,27.20837582650539,133,501750,29.57
+2015,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,39.263495730736786,175,497084,39.730000000000004
+2016,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,57.213381284904756,254,491086,53.379999999999995
+2017,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,66.99715387535946,298,484350,71.71000000000001
+2018,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,68.26878756317299,299,477194,63.5
+2019,24005,Baltimore County (MD),Baltimore County,nhw,Non-Hispanic White,opioid,All opioids,53.72168692450842,239,470549,56.24
+1999,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,939066,3.06
+2000,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,926665,3.55
+2001,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,914909,4.109999999999999
+2002,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,900730,4.76
+2003,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,4.873384814890447,44,886326,5.51
+2004,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,6.477129448093271,57,870950,6.38
+2005,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,7.96134410501648,71,853829,7.38
+2006,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,10.385348058775914,85,835960,8.55
+2007,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,8.190548978490733,68,822878,9.9
+2008,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,11.452039899632242,96,811073,11.46
+2009,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,8.681426477838157,70,802823,13.27
+2010,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,13.447936717885058,108,793586,15.370000000000001
+2011,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,19.06267985601832,149,784707,17.8
+2012,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,20.39940806147734,152,778465,20.610000000000003
+2013,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,24.214631562200825,180,773493,23.86
+2014,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,23.88137843403259,185,768008,27.630000000000003
+2015,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,26.142631290363333,193,761073,32
+2016,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,57.01879965915369,407,754092,37.05
+2017,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,53.78030345180304,388,746863,42.9
+2018,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,41.31685147325396,294,739806,49.68
+2019,39035,Cuyahoga County (OH),Cuyahoga County,nhw,Non-Hispanic White,opioid,All opioids,37.90736031366064,269,733595,57.52
+1999,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,161711,3.08
+2000,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,162567,3.19
+2001,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,166954,3.3
+2002,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,168662,3.42
+2003,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,8.0996070532693,15,168805,3.54
+2004,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,172775,3.66
+2005,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,178286,3.79
+2006,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,184613,3.92
+2007,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,191712,4.06
+2008,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,197418,4.21
+2009,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,206478,4.35
+2010,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,215487,4.51
+2011,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,222697,4.67
+2012,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,230013,4.83
+2013,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,236039,5
+2014,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,241504,5.18
+2015,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,6.051212582741763,15,247992,5.359999999999999
+2016,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,7.362552148840453,21,253874,5.55
+2017,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,8.653209811782544,22,259989,5.74
+2018,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,5.423260781669363,19,264731,5.95
+2019,11001,District of Columbia (DC),District of Columbia,nhw,Non-Hispanic White,opioid,All opioids,5.46005646631559,16,269174,6.159999999999999
+1999,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,503050,1.99
+2000,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,502005,2.36
+2001,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,504602,2.8
+2002,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,505537,3.3299999999999996
+2003,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,8.45744902003383,46,505306,3.9499999999999997
+2004,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,6.960430766631348,38,504769,4.68
+2005,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,4.722435508469161,25,503662,5.56
+2006,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,7.077713465548839,38,504783,6.59
+2007,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,8.280357199606037,45,503990,7.819999999999999
+2008,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,6.522086745191564,34,501728,9.28
+2009,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,11.565995634485125,61,499525,11.02
+2010,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,10.279676549326089,53,499080,13.07
+2011,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,12.686105611857784,68,498898,15.51
+2012,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,17.6048493450493,91,499846,18.4
+2013,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,13.650040598932067,68,499505,21.84
+2014,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,13.687460181323338,75,501625,25.919999999999998
+2015,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,21.32221731801836,107,505071,30.75
+2016,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,52.02610710835535,264,508671,36.49
+2017,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,61.14212920866942,312,509604,43.3
+2018,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,41.24647912474326,215,509734,51.379999999999995
+2019,12031,Duval County (FL),Duval County,nhw,Non-Hispanic White,opioid,All opioids,54.61289265202609,268,509828,60.97
+1999,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,28.52904410401156,218,777740,27.05
+2000,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,25.298728374338047,192,772196,27.3
+2001,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,26.789095689648317,201,767571,27.55
+2002,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,29.505942669258037,218,762881,27.8
+2003,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,758728,11.629999999999999
+2004,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,753528,4.87
+2005,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,745644,2.04
+2006,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,3.920624278728966,26,738104,2.62
+2007,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,3.867377147572805,28,732278,3.38
+2008,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,5.706118530928946,44,728076,4.35
+2009,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,7.0829039214383425,52,724392,5.6
+2010,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,6.461641622273295,43,721514,7.22
+2011,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,8.101705786339556,56,719803,9.3
+2012,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,7.761390801302015,53,717487,11.97
+2013,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,12.532947523146253,85,715541,15.42
+2014,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,13.455598494625155,95,713368,19.86
+2015,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,30.76837604151767,205,709680,25.57
+2016,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,33.552202732053644,219,705581,32.94
+2017,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,31.155761003587816,207,702883,26.51
+2018,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,18.23141533277925,125,700430,21.34
+2019,36029,Erie County (NY),Erie County,nhw,Non-Hispanic White,opioid,All opioids,17.458702122257037,111,697432,17.18
+1999,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,5.620171462571946,16,308378,8.98
+2000,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,7.298382003912371,20,304599,8.56
+2001,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,9.590053287038124,28,301612,8.15
+2002,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,11.108436148109245,30,297493,7.7700000000000005
+2003,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,7.744436059538798,22,293315,7.4
+2004,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,4.69441075218016,13,288091,7.05
+2005,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,7.602393812701627,21,283820,6.72
+2006,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,8.064032266652069,24,279571,6.4
+2007,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,276181,6.1
+2008,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,273193,5.81
+2009,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,270815,5.54
+2010,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,7.868016442777809,19,267774,6.6
+2011,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,8.560609762002702,21,265175,7.88
+2012,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,10.28784532034664,26,262599,9.4
+2013,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,9.096247596260891,24,260041,11.209999999999999
+2014,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,9.74523265855004,22,257870,13.38
+2015,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,9.591898838916402,23,255524,15.96
+2016,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,24.81803419373419,58,253426,19.03
+2017,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,30.75973932102051,68,251056,22.71
+2018,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,29.953726747235038,70,248564,27.09
+2019,34013,Essex County (NJ),Essex County,nhw,Non-Hispanic White,opioid,All opioids,20.370395872411898,50,245288,32.309999999999995
+1999,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,623624,2.9299999999999997
+2000,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,615604,3.48
+2001,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,609382,4.119999999999999
+2002,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,598953,4.89
+2003,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,8.00210264279291,47,589940,5.8
+2004,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,8.412739404810354,51,580389,6.87
+2005,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,9.296109142120073,54,571611,8.15
+2006,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,10.210695526267715,58,563355,9.67
+2007,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,10.535271662837843,59,557635,11.46
+2008,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,12.999543395654637,71,553021,13.59
+2009,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,8.695792593688731,47,551904,16.110000000000003
+2010,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,16.283651921190394,90,549490,19.110000000000003
+2011,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,23.04473065601212,120,546445,22.650000000000002
+2012,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,23.633545941042794,126,545869,26.86
+2013,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,30.421082748567777,164,544984,31.85
+2014,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,38.06699940196676,197,544224,37.77
+2015,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,52.16081128190918,271,542380,44.78
+2016,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,52.0433099881991,272,540763,53.1
+2017,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,65.25836594437574,336,539861,62.96
+2018,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,49.462422491321654,252,538513,53.290000000000006
+2019,39061,Hamilton County (OH),Hamilton County,nhw,Non-Hispanic White,opioid,All opioids,46.869952505115585,247,538012,45.11
+1999,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,537011,0.9
+2000,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,535803,1.1
+2001,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,534828,1.35
+2002,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,532782,1.6500000000000001
+2003,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,3.4863869432381103,20,532009,2.02
+2004,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,2.4788699495882756,13,529279,2.48
+2005,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,3.3417466815570025,19,527587,3.04
+2006,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,2.425749145911209,13,527640,3.73
+2007,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,2.8736040945780115,16,528998,4.58
+2008,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,2.745401028405909,15,530546,5.619999999999999
+2009,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,4.3191565428349445,24,530395,6.89
+2010,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,6.7698995582028285,34,531032,8.44
+2011,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,12.994244125973697,68,531918,10.360000000000001
+2012,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,13.660670298939127,74,533517,12.7
+2013,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,18.988049389969184,103,534989,15.57
+2014,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,16.569080298508997,84,534453,19.1
+2015,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,19.131241816773077,96,533722,23.419999999999998
+2016,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,30.99945488716877,153,531782,28.72
+2017,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,47.67698540333168,234,529037,35.220000000000006
+2018,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,37.3052990597746,185,524021,43.190000000000005
+2019,21111,Jefferson County (KY),Jefferson County,nhw,Non-Hispanic White,opioid,All opioids,45.3390576889866,221,519735,52.97
+1999,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,432353,0.08
+2000,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,427632,0.22
+2001,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,423711,0.61
+2002,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,420109,1.6800000000000002
+2003,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,4.753682286472344,19,417130,4.67
+2004,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,12.762831257431191,53,413958,12.92
+2005,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,10.341806796070918,41,410023,12.89
+2006,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,11.314549983347604,43,406220,12.850000000000001
+2007,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,16.790023330511328,66,402127,12.82
+2008,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,14.730879563246758,56,398505,12.79
+2009,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,11.612956975232764,43,395738,12.75
+2010,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,12.24023351353821,44,394571,12.719999999999999
+2011,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,12.737808579599259,50,392913,12.68
+2012,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,17.066749380464866,63,391547,18.02
+2013,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,21.321835099539776,73,390296,25.6
+2014,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,40.5396505032351,140,387897,36.36
+2015,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,52.62922427075161,183,385968,51.660000000000004
+2016,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,69.54937852187349,245,384357,73.39
+2017,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,111.53808304444458,383,382344,104.25
+2018,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,55.391693462293475,197,381161,67.75
+2019,39113,Montgomery County (OH),Montgomery County,nhw,Non-Hispanic White,opioid,All opioids,49.415550385257184,171,379938,44.03
+1999,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,357603,2.19
+2000,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,357614,2.53
+2001,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,356171,2.9099999999999997
+2002,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,354125,3.3499999999999996
+2003,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,4.0721928308302076,15,352617,3.86
+2004,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,6.753698991776016,24,350573,4.45
+2005,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,4.063499475979772,15,348133,5.119999999999999
+2006,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,4.281671315319256,14,345232,5.9
+2007,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,5.832247764181514,22,342541,6.79
+2008,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,8.119628544619276,26,340593,7.83
+2009,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,11.471744481581934,38,338225,9.01
+2010,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,14.972240780794287,49,336353,10.38
+2011,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,15.972536181258024,52,335576,11.96
+2012,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,10.980709878595707,38,335090,13.78
+2013,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,12.727646438147346,43,334378,15.870000000000001
+2014,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,15.97864311132401,50,332803,18.279999999999998
+2015,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,19.481176214529498,62,330954,21.05
+2016,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,21.41744013003211,70,328512,27.99
+2017,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,41.740356259289605,124,325358,37.230000000000004
+2018,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,56.40281273231041,174,322670,49.51
+2019,10003,New Castle County (DE),New Castle County,nhw,Non-Hispanic White,opioid,All opioids,59.13152386504827,179,320336,65.83
+1999,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,804244,10.76
+2000,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,807264,10.77
+2001,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,813055,10.78
+2002,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,822437,10.8
+2003,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,10.045399099212936,65,827158,10.81
+2004,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,12.040787644206798,80,836240,10.82
+2005,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,9.443819030313724,64,839805,10.83
+2006,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,9.948419982522326,65,828126,10.850000000000001
+2007,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,13.523920879664562,90,816212,10.860000000000001
+2008,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,11.774374044567168,75,809039,10.870000000000001
+2009,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,9.284554627357789,63,804789,10.88
+2010,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,12.84160145713538,90,804247,10.9
+2011,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,8.318897369053847,56,801753,10.91
+2012,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,6.547901240639363,51,801071,10.92
+2013,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,11.701239830996082,79,804366,10.93
+2014,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,9.211381785863255,58,807937,10.950000000000001
+2015,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,20.702844471497176,126,812576,18.8
+2016,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,39.54805078645205,242,817004,32.290000000000006
+2017,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,52.77639412051912,325,816087,55.449999999999996
+2018,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,44.02844983725971,275,812895,51.48
+2019,12099,Palm Beach County (FL),Palm Beach County,nhw,Non-Hispanic White,opioid,All opioids,51.12171569251648,318,811408,47.790000000000006
+1999,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,664707,1.5
+2000,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,650630,1.61
+2001,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,636018,1.73
+2002,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,620949,1.86
+2003,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,606719,1.99
+2004,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,594589,2.14
+2005,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.6925805525269584,16,583906,2.29
+2006,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,573882,2.46
+2007,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,570547,2.64
+2008,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,4.7328890266531225,26,568068,2.84
+2009,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,4.372673930379271,23,571483,3.05
+2010,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.923031095026489,18,572796,3.27
+2011,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,3.891054819336104,24,570618,3.51
+2012,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.2296190284517245,15,569651,3.7600000000000002
+2013,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.3627019468875456,16,566191,4.04
+2014,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,4.164461154321478,25,563495,4.34
+2015,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.621946629418768,19,560624,4.6499999999999995
+2016,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,2.2376773732176316,16,558660,9.93
+2017,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,4.202230768809897,23,556947,21.18
+2018,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,74.50095684824349,425,554266,45.190000000000005
+2019,42101,Philadelphia County (PA),Philadelphia County,nhw,Non-Hispanic White,opioid,All opioids,68.75851467342953,399,553654,96.41000000000001
+1999,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,154241,8.850000000000001
+2000,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,150959,9.75
+2001,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,148708,10.739999999999998
+2002,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,145555,11.83
+2003,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,18.044537985081313,28,143231,13.03
+2004,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,13.312317064681771,21,140584,14.350000000000001
+2005,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,8.208354888498011,12,137404,15.81
+2006,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,22.486948372994505,33,134912,17.41
+2007,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,15.709223540121268,22,134552,19.18
+2008,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,18.413783305789288,26,135068,21.130000000000003
+2009,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,27.454051134870564,40,136261,23.27
+2010,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,25.791904384408483,40,137290,25.630000000000003
+2011,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,31.140173594116945,46,137534,28.24
+2012,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,22.093606326317474,36,138047,31.1
+2013,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,34.169473894216146,50,138112,34.260000000000005
+2014,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,34.935633678847616,55,137884,37.74
+2015,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,29.870277788786012,52,138753,41.57
+2016,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,58.00712110085104,86,138185,45.790000000000006
+2017,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,56.191186674303275,86,137647,50.44
+2018,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,53.68924524450546,79,136483,55.56
+2019,29510,St. Louis city (MO),St. Louis city,nhw,Non-Hispanic White,opioid,All opioids,59.40151367744177,86,136671,61.21
+1999,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,783486,4.119999999999999
+2000,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,776888,4.57
+2001,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,769914,5.07
+2002,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,NA,NA,760353,5.63
+2003,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,4.595407690981165,34,750865,6.25
+2004,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,6.419244942873386,44,740063,6.94
+2005,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,6.532888254797711,45,729344,7.7
+2006,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,9.243889477724178,62,719778,8.55
+2007,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,7.061085245951415,47,711059,9.49
+2008,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,12.049368346162707,78,704735,10.54
+2009,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,13.037870543446063,83,699833,11.7
+2010,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,15.407050906402699,97,695490,12.98
+2011,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,17.474697784652342,106,693628,14.41
+2012,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,13.858659979806745,87,691254,16
+2013,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,18.72791606086953,112,687963,17.759999999999998
+2014,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,19.94878976860277,121,684985,19.72
+2015,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,16.70600591440701,100,680693,21.89
+2016,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,27.191832998549646,154,674334,24.3
+2017,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,26.32984954216758,156,668239,26.97
+2018,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,34.24908242425666,196,663240,29.939999999999998
+2019,29189,St. Louis County (MO),St. Louis County,nhw,Non-Hispanic White,opioid,All opioids,26.624459979633333,152,658371,33.24
