@@ -10,6 +10,9 @@ data/icen_2000_09_y0004.zip
 data/icen_2000_09_y0509.zip
 data/icen1999.txt.zip
 data/pcen_v2019_y1019_txt.zip
+code/xx**
+code/_old/**
+plots/old/**
 
 # History files
 .Rhistory
