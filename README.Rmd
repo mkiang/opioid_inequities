@@ -17,11 +17,11 @@ knitr::opts_chunk$set(
 knitr::include_graphics("./plots/fig01_map_all_opioids.jpg")
 ```
 
-This is reproducible code for our forthcoming paper ["Racial/ethnic disparities in opioid-related mortality in the US, 1999-2019: The extreme case of Washington DC"](LINK), which uses [restricted-access multiple cause of death data](https://www.cdc.gov/nchs/nvss/nvss-restricted-data.htm) to systematically examine racial/ethnic disparities in the trajectory of opioid-related deaths by geography. The full citation is:
+This is reproducible code for our forthcoming paper ["Racial/ethnic disparities in opioid-related mortality in the US, 1999-2019: The extreme case of Washington DC"](https://link.springer.com/article/10.1007/s11524-021-00573-8), which uses [restricted-access multiple cause of death data](https://www.cdc.gov/nchs/nvss/nvss-restricted-data.htm) to systematically examine racial/ethnic disparities in the trajectory of opioid-related deaths by geography. The full citation is:
 
-> Kiang MV, Tsai AC, Alexander MJ, Rehkopf DH, and Basu S, Racial/ethnic disparities in opioid-related mortality in the US, 1999-2019: The extreme case of Washington DC. Forthcoming. 
+> Kiang MV, Tsai AC, Alexander MJ, Rehkopf DH, Basu S. Racial/Ethnic Disparities in Opioid-Related Mortality in the USA, 1999–2019: the Extreme Case of Washington DC. J Urban Heal. Published online 2021:1-7. doi: 10.1007/s11524-021-00573-8
 
-## Abstract
+## Abstract (not published)
 
 In 2019, there were nearly 50,000 opioid-related deaths in the US, with substantial variation across sociodemographic groups and geography. To systematically investigate patterns of racial/ethnic inequities in opioid-related mortality, we used joinpoint regression models to estimate the trajectory of the opioid epidemic among non-Hispanic Black versus non-Hispanic white residents in Washington DC, 45 states, and 81 sub-state areas. We highlight the unique inequities observed in Washington DC. In 2019, the observed opioid-related mortality rate among Black DC residents was 11.3 times higher than white DC residents, resulting in 56.0 more deaths per 100,000 (61.5 vs. 5.5 per 100,000). This inequity was substantially higher than any other jurisdiction on both the relative and absolute scales. Most opioid-related deaths in DC involved synthetic opioids, which was present in 92% (N=198) of deaths among Black DC residents and 69% (N=11) of deaths among white DC residents. Localized, equitable, culturally-appropriate, targeted interventions are necessary to reduce the uniquely disproportionate burden of opioid-related mortality among Black DC residents. 
 

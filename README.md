@@ -7,17 +7,19 @@
 
 This is reproducible code for our forthcoming paper [“Racial/ethnic
 disparities in opioid-related mortality in the US, 1999-2019: The
-extreme case of Washington DC”](LINK), which uses [restricted-access
-multiple cause of death
+extreme case of Washington
+DC”](https://link.springer.com/article/10.1007/s11524-021-00573-8),
+which uses [restricted-access multiple cause of death
 data](https://www.cdc.gov/nchs/nvss/nvss-restricted-data.htm) to
 systematically examine racial/ethnic disparities in the trajectory of
 opioid-related deaths by geography. The full citation is:
 
-> Kiang MV, Tsai AC, Alexander MJ, Rehkopf DH, and Basu S, Racial/ethnic
-> disparities in opioid-related mortality in the US, 1999-2019: The
-> extreme case of Washington DC. Forthcoming.
+> Kiang MV, Tsai AC, Alexander MJ, Rehkopf DH, Basu S. Racial/Ethnic
+> Disparities in Opioid-Related Mortality in the USA, 1999–2019: the
+> Extreme Case of Washington DC. J Urban Heal. Published online
+> 2021:1-7. doi: 10.1007/s11524-021-00573-8
 
-## Abstract
+## Abstract (not published)
 
 In 2019, there were nearly 50,000 opioid-related deaths in the US, with
 substantial variation across sociodemographic groups and geography. To
